@@ -79,7 +79,6 @@ with open(args["index_cut"]) as f:
     for row in reader:
                 features = [float(x) for x in row[1:]]
                 (score, resultID) = searcher.search(features)[0]
-                print(resultID)
                 video.set(0, float(resultID))
                 ret, frame = video.read()
                 frame = cv.resize(frame, (size, size))

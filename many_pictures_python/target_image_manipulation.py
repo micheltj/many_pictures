@@ -20,7 +20,7 @@ class image_manipulation():
         self.divider = 10
         self.size = size
         self.final_image = np.zeros((self.size*int(np.floor(self.image.shape[0]/self.divider)+1), self.size*int(np.floor(self.image.shape[1]/self.divider)+1), 3))
-        print(int(np.floor(self.image.shape[1]/self.divider)))
+        
     
     def cut(self, dir):
         "Get the bin combination for the Input Image"
